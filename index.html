@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="3-2-1 Even Columns using pure CSS">
+  <meta name="author" content="Robby Klein">
+  <link rel="stylesheet" media="screen,projection,tv" href="style.css">
+  <title>Fluid Responsive Even Columns, Constant Spacing (CSS)</title>
+</head>
+<body>
+	<div class="widthWrapper">
+
+		<header id="masterHeader">
+			<h1>3-2-1 Fluid Columns Constant Spacing (Pure CSS)</h1>
+			<p>Here's a pure CSS solution for creating a responsive fluid 3 column grid with even spacing.</p>
+		</header>
+
+
+		<div id="gallery">
+
+			<header class="headSpace">
+				<h2>For an Image Gallery</h2>
+				<p>All your images must be evenly sized for this to work well.</p>
+			</header>
+
+			<ul>
+				<li>
+					<a href="#"><img src="/demos/columns/images/wolf.png" /></a>
+				</li>
+
+				<li>
+					<a href="#"><img src="/demos/columns/images/wolf.png" /></a>
+				</li>
+
+				<li>
+					<a href="#"><img src="/demos/columns/images/wolf.png" /></a>
+				</li>
+
+				<li>
+					<a href="#"><img src="/demos/columns/images/wolf.png" /></a>
+				</li>
+
+				<li>
+					<a href="#"><img src="/demos/columns/images/wolf.png" /></a>
+				</li>
+
+				<li>
+					<a href="#"><img src="/demos/columns/images/wolf.png" /></a>
+				</li>
+
+				<li>
+					<a href="#"><img src="/demos/columns/images/wolf.png" /></a>
+				</li>
+
+				<li>
+					<a href="#"><img src="/demos/columns/images/wolf.png" /></a>
+				</li>
+
+				<li>
+					<a href="#"><img src="/demos/columns/images/wolf.png" /></a>
+				</li>
+			</ul>
+
+		</div><!-- gallery -->
+
+
+		<div id="sidebars">
+
+			<header class="headSpace">
+				<h2>Two Sidebars</h2>
+				<p>All your images must be evenly sized for this to work well.</p>
+			</header>
+
+			<div id="left">
+				<article>
+					<p>Capistrano is probably the coolest and best way you can deploy your rails applications today, but it can frustrating to set up and understand. A few months ago I showed you how to deploy from an Ubuntu machine, and today I’m going to show you how it’s done on a Windows 8.1 machine. This was a major pain to figure out, so hopefully this will make the process painless for the next.</p>
+
+					<p>Before you begin, there’s a security issue I have to bring up. Capistrano on windows will not work using SSH to connect to your server. I searched far and wide and found no solution. To work around this problem we’re going to allow a deploy user with limited permissions to connect using password protection.</p>
+
+					<p>This tutorial is to take you through the Capistrano deployment portion of pushing a Rails application to production. By this point you should have your production server ready to go. My set up is running Ruby, Ngnix, MySQL, and Phusion Passenger. You will also need Git installed. If you’re not there yet, I’ve written guides on setting up every portion, they’re listed below:</p>
+				</article>
+			</div>
+
+			<div id="middle">
+				<h3>Other Pens</h3>
+				<ul>
+					<li>
+						<a target="_blank" href="http://codepen.io/robbyk/pen/HuGht">Easy Click Article Index</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://codepen.io/robbyk/pen/vENKBO">Multi-colored Backgrounds</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://codepen.io/robbyk/pen/JFdru">Slide-Toggle Menu with CSS3 transitions</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://codepen.io/robbyk/pen/DJbcf">SVG Icon Buttons</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="right">
+				<h3>Other Pens</h3>
+				<ul>
+					<li>
+						<a target="_blank" href="http://codepen.io/robbyk/pen/HuGht">Easy Click Article Index</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://codepen.io/robbyk/pen/vENKBO">Multi-colored Backgrounds</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://codepen.io/robbyk/pen/JFdru">Slide-Toggle Menu with CSS3 transitions</a>
+					</li>
+					<li>
+						<a target="_blank" href="http://codepen.io/robbyk/pen/DJbcf">SVG Icon Buttons</a>
+					</li>
+				</ul>
+			</div>
+
+		</div><!-- sidebars -->
+
+
+		<div id="fiftyFifty">
+
+			<header class="headSpace">
+				<h2>Maybe you just want a 50/50 split</h2>
+				<p>All your images must be evenly sized for this to work well.</p>
+			</header>
+
+			<article id="left">
+				<p>Capistrano is probably the coolest and best way you can deploy your rails applications today, but it can frustrating to set up and understand. A few months ago I showed you how to deploy from an Ubuntu machine, and today I’m going to show you how it’s done on a Windows 8.1 machine. This was a major pain to figure out, so hopefully this will make the process painless for the next.</p>
+
+				<p>Before you begin, there’s a security issue I have to bring up. Capistrano on windows will not work using SSH to connect to your server. I searched far and wide and found no solution. To work around this problem we’re going to allow a deploy user with limited permissions to connect using password protection.</p>
+
+				<p>This tutorial is to take you through the Capistrano deployment portion of pushing a Rails application to production. By this point you should have your production server ready to go. My set up is running Ruby, Ngnix, MySQL, and Phusion Passenger. You will also need Git installed. If you’re not there yet, I’ve written guides on setting up every portion, they’re listed below:</p>
+			</article>
+
+			<article id="right">
+				<p>Capistrano is probably the coolest and best way you can deploy your rails applications today, but it can frustrating to set up and understand. A few months ago I showed you how to deploy from an Ubuntu machine, and today I’m going to show you how it’s done on a Windows 8.1 machine. This was a major pain to figure out, so hopefully this will make the process painless for the next.</p>
+
+				<p>Before you begin, there’s a security issue I have to bring up. Capistrano on windows will not work using SSH to connect to your server. I searched far and wide and found no solution. To work around this problem we’re going to allow a deploy user with limited permissions to connect using password protection.</p>
+
+				<p>This tutorial is to take you through the Capistrano deployment portion of pushing a Rails application to production. By this point you should have your production server ready to go. My set up is running Ruby, Ngnix, MySQL, and Phusion Passenger. You will also need Git installed. If you’re not there yet, I’ve written guides on setting up every portion, they’re listed below:</p>
+			</article>
+
+		</div>
+
+
+	</div><!-- widthWrapper -->
+</body>
+</html>

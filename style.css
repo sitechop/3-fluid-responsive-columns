@@ -1,0 +1,234 @@
+/* ///////////////////////// */
+/* Global Stuff */
+/* ///////////////////////// */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  line-height: 1;
+  font-size: 100%;
+  font-family: sans-serif;
+}
+
+h1, h2, h3{
+	color: #333;
+	line-height: 1.2;
+	margin-bottom: 0.25em;
+}
+
+h1 {
+	font-size: 1.75em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.25em;
+	margin-bottom: 0.5em;
+}
+
+p {
+	color: #666;
+  line-height: 1.45;
+}
+
+p+p {
+	margin-top: 1.5em;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: #666;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #333;
+}
+
+img {
+	/* Fluid Images */
+	max-width: 100%;
+	display: block;
+	border: none;
+}
+
+
+/* ///////////////////////// */
+/* Page Stuff */
+/* ///////////////////////// */
+.widthWrapper {
+	width: 90%;
+	max-width: 996px;
+	margin: 0 auto;
+}
+
+#masterHeader {
+	padding-bottom: 1.5em;
+	margin-bottom: 2.5em;
+	margin-top: 2.5em;
+	border-bottom: 3px solid #ccc;
+}
+
+.headSpace {
+	margin-bottom: 2.5em;
+	padding-bottom: 1.5em;
+	border-bottom: 2px dashed #eee;
+}
+
+#sidebars, #fiftyFifty {
+	margin-top: 4em;
+}
+
+#gallery, #sidebars, #fiftyFifty {
+	/* Float Clear */
+	overflow: hidden;
+	padding-bottom: 2.5em;
+}
+
+#sidebars li a {
+	margin: 1em 0;
+	display: block;
+}
+
+/* ///////////////////////// */
+/* Gallery */
+/* ///////////////////////// */
+#gallery ul {
+	margin: 1.5em 0;
+}
+
+#gallery li {
+	display: block;
+	float: left;
+	width: 33.3333333333%;
+	margin-bottom: 1.5em;
+	/* So padding doesn't escape max-width */
+	box-sizing: border-box;
+}
+
+/* Each box needs an equal 
+Amount of padding so the 
+images are the same size */
+#gallery li:nth-child(3n+1) {
+	padding-right: 1em;
+}
+
+#gallery li:nth-child(3n+2) {
+	padding: 0 .5em;
+}
+
+#gallery li:nth-child(3n+3) {
+	padding-left: 1em;
+}
+
+
+/* ///////////////////////// */
+/* Two Sidebar's */
+/* ///////////////////////// */
+#sidebars #left, #sidebars #right, #sidebars #middle {
+	margin-bottom: 1.5em;
+}
+
+#sidebars #left {
+	width: 50%;
+	float: left;
+}
+
+#sidebars #middle, #sidebars #right {
+	box-sizing: border-box;
+	padding-left: 2.5em;
+	width: 25%;
+	float: right;
+}
+
+
+/* ///////////////////////// */
+/* 50/50 */
+/* ///////////////////////// */
+#fiftyFifty #left {
+	float: left;
+	box-sizing: border-box;
+	padding-right: 0.75em;
+	width: 50%;
+}
+
+#fiftyFifty #right {
+	float: right;
+	box-sizing: border-box;
+	padding-left: 0.75em;
+	width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+	#sidebars #left, #sidebars #middle, #sidebars #right, #fiftyFifty #left, #fiftyFifty #right {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	/* ///////////////////////// */
+	/* Gallery */
+	/* ///////////////////////// */
+	
+	/* Remove by 3 padding */
+	#gallery li:nth-child(3n+1) {
+		padding: 0;
+	}
+
+	#gallery li:nth-child(3n+2) {
+		padding: 0;
+	}
+
+	#gallery li:nth-child(3n+3) {
+		padding: 0;
+	}
+
+	/* Change to two column */
+	#gallery li {
+		width: 50%;
+		margin-bottom: 1.5em;
+	}
+
+	/* By 2 Padding */
+	#gallery li:nth-child(odd) {
+		padding-right: 0.75em;
+	}
+
+	#gallery li:nth-child(even) {
+		padding-left: 0.75em;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+	.widthWrapper {
+		max-width: 400px;
+	}
+
+	/* Change to 1 column*/
+	#gallery li {
+		width: 100%;
+		margin-bottom: 1.5em;
+	}
+
+	/* Remove by 2 padding */
+	#gallery li:nth-child(odd) {
+		padding-right: 0em;
+	}
+
+	#gallery li:nth-child(even) {
+		padding-left: 0em;
+	}
+
+}
